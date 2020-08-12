@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.testt.stg.cloud.migration</groupId>
+		<artifactId>Cldmig-service</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	
+	<artifactId>gitservice</artifactId>
+	<packaging>jar</packaging>
+	<properties>
+		<!-- The main class to start by executing java -jar -->
+		<start-class>org.testt.stg.cloud.migration.GitServiceApplication</start-class>
+	</properties>
+
+ <dependencies>
+		<!-- <dependency>
+			<groupId>org.testt.stg.cloud.migration</groupId>
+			<artifactId>cldmig-common</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency> -->
+		<dependency>
+			<groupId>org.eclipse.jgit</groupId>
+			<artifactId>org.eclipse.jgit</artifactId>
+			<version>5.7.0.202003110725-r</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.30</version>
+		</dependency>		
+		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+		<dependency>
+		    <groupId>commons-io</groupId>
+		    <artifactId>commons-io</artifactId>
+		    <version>2.6</version>
+		</dependency>
+	</dependencies> 
+</project>
